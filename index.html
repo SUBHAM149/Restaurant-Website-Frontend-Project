@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blue Flame Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- CANVAS BACKGROUND -->
+    <canvas id="alien-bg"></canvas>
+
+    <!-- LOADER -->
+    <div id="loader">
+      <h1>🔥 Blue Flame</h1>
+      <div class="spinner"></div>
+      <p>Loading Experience...</p>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main-content" class="hidden">
+      <!-- NAVBAR -->
+      <nav id="navbar">
+        <h2>🔥 Blue Flame</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <h1 class="glow-text">Where Taste Meets Elegance</h1>
+          <p>Experience premium dining with flavors that ignite your soul.</p>
+          <button class="glow-btn">Explore Menu</button>
+        </div>
+        <div class="hero-images">
+          <img
+            src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
+            class="img img1"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+            class="img img2"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"
+            class="img img3"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366"
+            class="img img4"
+          />
+        </div>
+      </section>
+
+      <!-- MENU -->
+      <section class="menu" id="menu">
+        <h2 class="section-title">Our Special Dishes</h2>
+        <div class="menu-items">
+          <div class="card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+            />
+            <h3>Grilled Steak</h3>
+            <p>₹799</p>
+          </div>
+
+          <div class="card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"
+            />
+            <h3>Italian Pasta</h3>
+            <p>₹499</p>
+          </div>
+
+          <div class="card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366"
+            />
+            <h3>Cheese Pizza</h3>
+            <p>₹599</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="gallery" id="gallery">
+        <h2 class="section-title">Restaurant Gallery</h2>
+        <div class="gallery-img">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1528605248644-14dd04022da1"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5"
+          />
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer id="contact">
+        <p>© 2026 Blue Flame Restaurant | Designed by Subham</p>
+        <div class="icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

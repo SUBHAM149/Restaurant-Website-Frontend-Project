@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #020024, #090979, #000000);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* CANVAS */
+#alien-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+/* LOADER */
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #000428, #004e92);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #fff;
+  border-top: 6px solid #00bfff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.hidden { display: none; }
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 90vh;
+  padding: 40px;
+}
+
+.hero-img {
+  width: 420px;
+  border-radius: 20px;
+  animation: float 4s infinite ease-in-out;
+  box-shadow: 0 0 30px #00bfff;
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.glow-text {
+  font-size: 3.5rem;
+  background: linear-gradient(90deg, #00bfff, #ffffff);
+  background-clip: text;          /* future standard */
+  -webkit-background-clip: text;  /* required now */
+  color: transparent;
+}
+
+
+.glow-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #00bfff;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 20px #00bfff;
+}
+
+/* MENU */
+.menu {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.menu-items {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 25px #00bfff;
+}
+
+.card img {
+  width: 220px;
+  height: 150px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* GALLERY */
+.gallery {
+  padding: 80px;
+  text-align: center;
+}
+
+.gallery-img {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-img img {
+  width: 260px;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.gallery-img img:hover {
+  transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  padding: 30px;
+  text-align: center;
+}
+
+.icons i {
+  margin: 10px;
+  color: #00bfff;
+  font-size: 20px;
+}
+/* TRIANGLE IMAGE HERO */
+.hero-images {
+  position: relative;
+  width: 420px;
+  height: 420px;
+}
+
+.hero-images .img {
+  position: absolute;
+  width: 180px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(0,191,255,0.7);
+  transition: 0.4s;
+  animation: floatImg 4s ease-in-out infinite;
+}
+
+/* IMAGE POSITIONS (TRIANGLE STYLE) */
+.img1 {
+  top: 0;
+  left: 120px;
+}
+
+.img2 {
+  top: 140px;
+  left: 0;
+}
+
+.img3 {
+  top: 140px;
+  right: 0;
+}
+
+.img4 {
+  bottom: 0;
+  left: 120px;
+}
+
+/* HOVER EFFECT */
+.hero-images .img:hover {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 0 40px #00bfff;
+  z-index: 10;
+}
+
+/* FLOATING */
+@keyframes floatImg {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
