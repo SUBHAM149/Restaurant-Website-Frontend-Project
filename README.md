@@ -1,4 +1,4 @@
-# 🍽️ Restaurant Website Frontend Project
+# 🍽️ Restaurant Website Front-end Project
 
 A stylish, responsive **Restaurant Website Frontend** built using **HTML, CSS, and JavaScript**. This project focuses on modern UI design, smooth animations, and an engaging user experience suitable for cafés, restaurants, or food businesses.
 
