@@ -106,6 +106,24 @@ Example:
 This project is open-source and free to use for educational and personal purposes.
 
 ---
+<p>
+  🔗 <b>Restaurant-Website:</b><br/>
+Live Demo: https://subham149.github.io/Restaurant-Website-Frontend-Project/
+
+</p>
+
+<hr/>
+
+<h2>📬 Connect With Me</h2>
+
+<ul>
+  <li>📧 Email: subhambehera04.03.2005@gmail.com</li>
+  <li>💼 LinkedIn: www.linkedin.com/in/subham-behera07</li>
+  <li>🐙 GitHub: https://github.com/SUBHAM149/</li>
+</ul>
+
+<hr/>
+---
 
 ## 🙌 Author
 
